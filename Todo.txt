@@ -1,0 +1,3 @@
+noetige Dateien erstellen
+Makefile anpassen zum Kopieren von /etc/check_mk/mrpe.cfg
+mrpe.cfg bereitstellen

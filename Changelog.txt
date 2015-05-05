@@ -1,0 +1,1 @@
+Die Dateien Todo.txt, Changelog.txt, README, Makefile wurden angelegt, aber noch nicht auf das Projekt angepas
