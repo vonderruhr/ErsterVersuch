@@ -1,0 +1,23 @@
+#!/bin/bash
+status=3
+message="Unbekannter Status"
+
+zaehler=$(ps -C bash | wc -l)
+
+if [ $zaehler -ge 10 ]; then
+      status=2
+      message="Critical - System überlastet"
+fi
+
+if [ $zaehler -lt 3 ]; then
+      status=0
+      message="OK - Alles passt"
+   else
+      if [ $zaehler -lt 10 ]; then
+            status=1
+            message="Warning - hohe Anzahl Prozesse"
+      fi
+fi
+
+echo $message
+exit $status
