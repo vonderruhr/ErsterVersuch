@@ -6,7 +6,7 @@
 # Vars
 DESTDIR=
 SCRIPTS=$(DESTDIR)/usr/bin
-PROJEKTVERZEICHNIS=/etc/usr/nagios-check
+PROJEKTVERZEICHNIS=/usr/local/bin/nagios-check
 
 # help target
 help:
@@ -26,8 +26,8 @@ help:
 
 # install target
 install:
-	@install -D -oroot -groot --mode=0744 check-prozesse $(PROJEKTVERZEICHNIS)/check-prozesse
+	@install -D -oroot -groot --mode=0744 check-prozesse $(DESTDIR)/$(PROJEKTVERZEICHNIS)/check-prozesse
 
 # uninstall target
 uninstall:
-	@rm $(PROJEKTVERZEICHNIS)/check-prozesse
+	@rm $(DESTDIR)/$(PROJEKTVERZEICHNIS)/check-prozesse
