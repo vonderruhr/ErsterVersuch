@@ -15,7 +15,7 @@ if [ $zaehler -lt 3 ]; then
    else
       if [ $zaehler -lt 10 ]; then
             status=1
-            message="Warning - hohe Anzahl Prozesse"
+            message="Warnung - hohe Anzahl Prozesse"
       fi
 fi
 
